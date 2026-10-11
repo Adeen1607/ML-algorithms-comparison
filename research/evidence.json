@@ -1,0 +1,11 @@
+{
+  "repository": "Adeen1607/ML-algorithms-comparison",
+  "review_date": "2026-10-11",
+  "evidence_note": "Historical saved notebook outputs, **not a fresh rerun**. Ten-fold cross-validation on the 320-row training partition reports LR, LDA and CART at 0.996875 mean accuracy, KNN at 0.993750, and NB and SVM at 0.990625. The separate SVM holdout demonstration reports 0.985 accuracy on a different 50% split. Differences this small on a 400-row sample do not establish a reliable winning algorithm.\n\n| Algorithm | Mean fold accuracy | Fold standard deviation |\n|---|---:|---:|\n| LR | 0.996875 | 0.009375 |\n| LDA | 0.996875 | 0.009375 |\n| KNN | 0.993750 | 0.018750 |\n| CART | 0.996875 | 0.009375 |\n| NB | 0.990625 | 0.020010 |\n| SVM | 0.990625 | 0.020010 |\n",
+  "inputs": [
+    {
+      "path": "ML Algorithm comparison .ipynb",
+      "sha256": "4c728cd5fe93ad1ab7c9407d2f00f80f81c767a4d92785a8834bd1d76af8f62c"
+    }
+  ]
+}

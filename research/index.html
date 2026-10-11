@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Energy Meter Classification</title><link rel="stylesheet" href="style.css"></head><body><header><div><p class="meta">Mohammed Adeen Shaik · Research and coursework</p><h1>Energy Meter Classification</h1><nav><a href="index.html">Overview</a><a href="report.html">Research report</a><a href="notebooks.html">Explained notebooks</a><a href="https://github.com/Adeen1607/ML-algorithms-comparison">Source repository</a></nav></div></header><main><h2>The study</h2><p>How do six classification algorithms compare on the recorded energy-meter sample?</p><p>Historical notebook outputs from 400 energy-meter observations; the source CSV is not included.</p><h2>What the evidence shows</h2><p>Historical saved notebook outputs, <strong>not a fresh rerun</strong>. Ten-fold cross-validation on the 320-row training partition reports LR, LDA and CART at 0.996875 mean accuracy, KNN at 0.993750, and NB and SVM at 0.990625. The separate SVM holdout demonstration reports 0.985 accuracy on a different 50% split. Differences this small on a 400-row sample do not establish a reliable winning algorithm.</p>
+<table>
+<thead>
+<tr>
+<th>Algorithm</th>
+<th style="text-align: right;">Mean fold accuracy</th>
+<th style="text-align: right;">Fold standard deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LR</td>
+<td style="text-align: right;">0.996875</td>
+<td style="text-align: right;">0.009375</td>
+</tr>
+<tr>
+<td>LDA</td>
+<td style="text-align: right;">0.996875</td>
+<td style="text-align: right;">0.009375</td>
+</tr>
+<tr>
+<td>KNN</td>
+<td style="text-align: right;">0.993750</td>
+<td style="text-align: right;">0.018750</td>
+</tr>
+<tr>
+<td>CART</td>
+<td style="text-align: right;">0.996875</td>
+<td style="text-align: right;">0.009375</td>
+</tr>
+<tr>
+<td>NB</td>
+<td style="text-align: right;">0.990625</td>
+<td style="text-align: right;">0.020010</td>
+</tr>
+<tr>
+<td>SVM</td>
+<td style="text-align: right;">0.990625</td>
+<td style="text-align: right;">0.020010</td>
+</tr>
+</tbody>
+</table><h2>Read the work</h2><p><a href="report.html">Research report and final result figures</a> · <a href="notebooks.html">Explained notebooks</a></p><h2>Interpretation</h2><p>The first SVM holdout and later cross-validation use different partitions and cannot be mixed into one benchmark. Repeated NoLoad observations may inflate row-level validation. Fold standard deviations are not confidence intervals. The data must be supplied before rerunning.</p><footer>Evidence dates and limitations are documented in the report. Static pages display saved outputs; they do not execute Python, R, Streamlit or API calls.</footer></main></body></html>
